@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .container {
+      background-color: #000;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      height: 748px;
+      gap: 9px;
+      width: 748px;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .card {
+      background-color: #F0F1EC;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05); /* Slightly enlarge the card */
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+    }
+
+    .box-1 {
+      background-color: #E72F24;
+    }
+    
+    .box-2 {
+      grid-column: span 3;
+      
+    }
+  
+    .box-3 {
+      grid-row: span 2;
+    }
+
+    .box-4 {
+      grid-area: 2 / 2 / 4 / 4
+    }
+
+    .box-5 {
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+
+    .box-6 {
+      grid-area: 3 / 4 / 5 / 4
+    }
+
+    .box-8 {
+      background-color: #F9D01E;
+    }
+
+    .box-9 {
+      background-color: #232629;
+    }
+
+    .box-10 {
+      grid-row: span 2;
+    }
+
+    /* Add more cards and boxes here */
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card box-1"></div>
+    <div class="card box-2"></div>
+    <div class="card box-3"></div>
+    <div class="card box-4"></div>
+    <div class="card box-5"></div>
+    <div class="card box-6"></div>
+    <div class="card box-7"></div>
+    <div class="card box-8"></div>
+    <div class="card box-9"></div>
+  </div>
+  <!-- Write your HTML here -->
+</body>
+
+</html>
